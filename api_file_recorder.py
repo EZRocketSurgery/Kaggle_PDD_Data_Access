@@ -8,7 +8,7 @@ api.authenticate()
 lines = common_methods.dataset_paths()
 
 #loop through the dataset list and get the file names for each dataset
-#then add the file names to a clean list and record in a .txt
+#then add the file names to a clean list and record in a dataset
 for line in lines:
     data_list_messy = api.dataset_list_files(line)
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
